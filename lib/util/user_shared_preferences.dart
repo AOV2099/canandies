@@ -97,7 +97,7 @@ class UserSharedPreferences {
       message += "${jsonItem['name']} [ x${jsonItem['rep']} ] => $productPrice MXN.\n";
     });
 
-    message += "Con un precio final de $finalPrice MXN.\n";
+    message += "\nCon un precio final de $finalPrice MXN.\n";
 
     UserSharedPreferences.clearCart();
     launch("https://wa.me/$number?text=$message");
